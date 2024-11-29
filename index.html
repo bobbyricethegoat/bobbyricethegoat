@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <title>Home</title>
-        <script src="javascript.js"></script>        
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Operation Chromite</title>
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
         <header class="header" id="header">
-            <div class="project-name">인천</div>
+            <div class="logo">인천</div>
             <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
+                <a href="#about">About</a>
                 <a href="#explore">Explore</a>
+                <a href="#buildup">The Buildup</a>
             </nav>
         </header>
+        <div class="hero-content">
+            <div class="hero-text-box">
+                <h1>Operation Chromite</h1>
+                <p id="thesis">Operation Chromite marked a critical turning point in the Korean War, as the United Nations assumed responsibility for the defense of South Korea, ensuring the protection of human rights in the face of external aggression.</p>
+                </div>
+                <button class="cta-button" id="explore-btn">Learn More</button>
+        </div>
+</section>
 
-        <section class="topSection">
-            <div class="content">
-                <h1>Welcome to Operation Chromite</h1>
-                <p>Explore the daring mission that turned the tide of the Korean War.</p>
-                <button class="scroll-button" id="explore-btn">Explore</button>
-            </div>
-        </section>
-
-        <!-- The Buildup Section -->
-        <section id="buildup" class="buildup-section">
-            <div class="buildup-content">
-                <h2>The Buildup</h2>
-                <button class="enter-btn" onclick="window.location.href='buildup.html'">Enter</button>
-            </div>
-        </section>
-        
-        <script src="javascript.js"></script> <!-- Moved here -->
-    </body>
+    <!-- The Buildup Section -->
+    <section class="buildup" id="buildup">
+        <div class="buildup-content">
+            <h2>The Buildup</h2>
+            <p>Discover the meticulous planning and strategy behind the Incheon Landing.</p>
+            <p id="Text">Author: Brandon Kim, Aldon Pagala</p>
+            <p id="Text">Word Count: 50</p>
+            <button class="cta-button" onclick="window.location.href='buildup.html'">Enter</button>
+        </div>
+        <footer class="footer">
+            <p>© 2024 Operation Chromite. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
 </html>
