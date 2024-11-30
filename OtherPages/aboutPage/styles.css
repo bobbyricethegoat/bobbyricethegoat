@@ -1,0 +1,174 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Apply Off-White Background to the Entire Section, Not Just the Content */
+body {
+    background-color: #f0f0f0; /* Off-white background for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    height: 58px;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 100px; /* Match home page spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: top 0.3s ease;
+    font-weight: bold; /* Match home page font boldness */
+    font-family: 'Arial', sans-serif; /* Ensure consistency with home page font */
+    box-sizing: border-box; /* Ensure padding stays inside the screen width */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Add space between navigation links */
+}
+
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Page Navigation Buttons (Bottom of Page Content) */
+.page-navigation {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the left and right */
+    padding: 20px 50px; /* Adds space to prevent overlap with edges */
+    box-sizing: border-box;
+}
+
+.prev-button,
+.next-button {
+    color: white;
+    background-color: #0078ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Global Text Shadow */
+* {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0); /* Subtle but clear drop shadow for all text */
+}
+
+/* Hero Section (no background color change) */
+.hero-about {
+    height: 50vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 50, 0.7), rgba(0, 0, 50, 0.5)), url('hero-image.jpg') no-repeat center center/cover; /* Keeping hero background */
+    color: white; /* Text remains white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-about p {
+    font-size: 1.2em;
+}
+
+/* About Content Section */
+.about-content {
+    max-width: 900px;  /* Ensure all sections use the same width */
+    margin: 0 auto;    /* Center content horizontally */
+    padding: 20px;
+    background-color: #f0f0f0; /* Off-white background */
+}
+
+/* Section Styling (Ensure consistency in margin and padding) */
+.section {
+    margin-bottom: 40px;
+    padding: 0 20px; /* Consistent padding */
+    width: 100%; /* Ensure full width consistency */
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center; /* Center headings */
+}
+
+.section p, .section ul {
+    font-size: 1.1em;
+    text-align: left; /* Align text inside div to the left */
+    color: #333; /* Normal dark text color */
+}
+
+/* Content Container with Side Images */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures even spacing */
+    gap: 20px;
+}
+
+.content-container img.side-image {
+    max-width: 100px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+footer {
+    background: #333;  /* Gray-ish background */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    height: 48px; /* Set the height explicitly to 48px */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+}
+
+/* Ensure no padding or margin on the paragraph */
+footer p {
+    margin: 0;
+    padding: 0;
+}
