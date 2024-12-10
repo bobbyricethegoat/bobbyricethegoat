@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../../images/g0k7rte6ncoy.png') no-repeat center center/cover; /* Add your background image */
+    background: url('../../images/battle-archives-map-inchon-1-10874494189661_800x.png') no-repeat center center/cover; /* Add your background image */
     background-size: cover; /* Ensure the image covers the section */
     color: white;
     text-align: center;
@@ -146,13 +146,46 @@ body {
 .buildup-content h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    padding-top: 70px;
+    padding-top: 35px;
 }
 
 .buildup-content p {
     margin-bottom: 20px;
     font-size: 1.2em;
     color: #555;
+}
+
+/* Content Boxes */
+.buildup-content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-box {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Aligns items vertically */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    line-height: 1.8;
+    color: #555;
+    transition: transform 0.2s ease;
+}
+
+.content-box h2 {
+    text-align: center; /* Keeps the text centered */
+    font-size: 2.5em; /* Increase the font size */
+    margin-bottom: 35px; /* Space between the title and other text */
+}
+
+.content-box:hover {
+  transform: translateY(-3px);
 }
 
 .footer {
@@ -162,93 +195,6 @@ body {
     width: 100%;
     padding: 15px 0;
 }
-
-/* Timeline Styling */
-.buildup-content {
-    padding: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Timeline Container */
-.timeline-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-/* Timeline Container */
-.timeline-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-/* Individual Timeline Block */
-.timeline-block {
-    position: relative;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 8px;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease;
-}
-
-.timeline-block:hover {
-    color: #333; /* Slightly darker text on hover */
-    border-color: #999; /* Darker border on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.timeline-block .timeline-date {
-    font-weight: bold;
-    color: #0078ff;
-    font-size: 1.2em;
-}
-
-.timeline-block .timeline-content {
-    flex-grow: 1;
-    text-align: left;
-    font-size: 1em;
-    padding-left: 15px;
-    line-height: 1.6;
-}
-
-/* Vertical Timeline Line */
-.timeline-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: calc(100% - 20px); /* Ensure vertical line does not extend too far */
-    background-color: #0078ff;
-}
-
-/* Dots */
-.timeline-block::before {
-    content: "";
-    position: absolute;
-    left: -8px;
-    height: 16px;
-    width: 16px;
-    background-color: white;
-    border: 4px solid #0078ff;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 
 /* Navigation Buttons */
 .page-navigation {
