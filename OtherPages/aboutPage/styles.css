@@ -8,6 +8,10 @@ body {
     scroll-behavior: smooth;
 }
 
+* {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Apply Off-White Background to the Entire Section, Not Just the Content */
 body {
     background-color: #f0f0f0; /* Off-white background for the entire page */
@@ -45,7 +49,6 @@ body::-webkit-scrollbar {
 
 
 .nav-links a {
-    margin-left: 20px;
     text-decoration: none;
     color: white;
     font-size: 1.1em;
@@ -92,11 +95,12 @@ body::-webkit-scrollbar {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0); /* Subtle but clear drop shadow for all text */
 }
 
-/* Hero Section (no background color change) */
+/* Hero Section */
 .hero-about {
-    height: 50vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 50, 0.7), rgba(0, 0, 50, 0.5)), url('hero-image.jpg') no-repeat center center/cover; /* Keeping hero background */
-    color: white; /* Text remains white */
+    height: 50vh; /* Set the height of the hero section */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../../images/111-SC-343656.jpg') no-repeat center center/cover;
+    color: white; /* Keep the text color white for contrast */
     display: flex;
     flex-direction: column;
     justify-content: center;
