@@ -8,6 +8,11 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 * {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -64,30 +69,33 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-/* Page Navigation Buttons (Bottom of Page Content) */
+/* Page Navigation Buttons */
 .page-navigation {
+    position: relative; /* Keep buttons positioned near the footer */
     display: flex;
-    justify-content: space-between; /* Align buttons to the left and right */
-    padding: 20px 50px; /* Adds space to prevent overlap with edges */
-    box-sizing: border-box;
+    justify-content: space-between; /* Place buttons on left and right */
+    padding: 10px 50px;
+    margin-top: 20px; /* Add space above the buttons */
 }
 
 .prev-button,
 .next-button {
-    color: white;
-    background-color: #0078ff;
-    padding: 10px 20px;
+    color: #555; /* Subtle gray color for the text */
+    background-color: transparent; /* No background by default */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 8px 15px; /* Smaller padding for a minimalist look */
     text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.9em; /* Slightly smaller text */
+    border-radius: 4px; /* Rounded edges for smooth look */
+    transition: all 0.3s ease;
 }
 
 .prev-button:hover,
 .next-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
+    color: #333; /* Slightly darker text on hover */
+    background-color: #f9f9f9; /* Subtle light background on hover */
+    border-color: #999; /* Darker border on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Global Text Shadow */
